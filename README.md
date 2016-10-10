@@ -1,2 +1,2 @@
-Create on new branch is not quick.
+Create one new branch is very quick right.
 This is new file. llll# ThinkingInJava

@@ -1,6 +1,6 @@
 package concurrency.test;
 
-public class Problem2_1 {
+public class Problem2_2_1 {
 	
 	public static void main(String[] args) {
 		for (int i = 0; i < 10; i++) {

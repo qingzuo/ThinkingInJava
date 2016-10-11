@@ -17,15 +17,17 @@ public class CallableDemo {
 		for (int i = 0; i < 10; i++) {
 			results.add(exec.submit(new TaskWithResult(i)));
 		}
+		
 		for (Future<String> fs : results) {
 			try {
 				System.out.println(fs.get());
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+				System.out.println(e);
+				return;
 			} catch (ExecutionException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+				System.out.println(e);
 			} finally {
 				exec.shutdown();
 			}
